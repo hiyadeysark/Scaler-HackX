@@ -2151,3 +2151,12 @@ p {
   padding-bottom: 225px;
 }
 
+.imglogo{
+  height: 200px;
+  width: 240px;
+}
+
+.team-img{
+  height: 300px;
+  width: 300px;
+}

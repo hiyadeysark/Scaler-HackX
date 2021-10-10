@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+    <title>FinP</title>
+    <link rel="icon" href="{% static 'assets/images/logo/Finplogo.png'%}" type="image/png">
+</head>
+
+<body>
+    <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
+        <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
+        <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
+            <img class="rounded-pill img-fluid" width="65"
+                src="{% static 'img/dp.jpg' %}"
+                alt="">
+                <p>&nbsp;&nbsp;</p>
+            <div class="ms-2">
+                <h5 class="fs-6 mb-0">
+                    <a class="text-decoration-none" href="/profile">{{request.user.username}}</a>
+                </h5>
+            </div>
+        </div>
+        <ul class="categories list-unstyled">
+            <li class="">
+                <i class="uil-folder"></i><a href="/index">Home</a>
+            </li>
+            <li class="">
+                <i class="uil-folder"></i> <a href="/weekly">Weekly Record</a>
+            </li>
+            <li class="">
+                <i class="uil-folder"></i><a href="/stats">Monthy Record</a>
+            </li>
+            <li class="">
+                <i class="uil-folder"></i><a href="/info"> Yearly Record</a>
+            </li>
+            <li class="">
+                <i class="uil-folder"></i><a href="/tables"> History</a>
+            </li>
+            <li class="">
+                <i class="uil-folder"></i><a href="/knowledge"> Knowledge</a>
+            </li>
+            <li class="">
+                <i class="uil-folder"></i><a href="/profile"> Profile</a>
+            </li>
+            <li class="">
+                <i class="uil-folder"></i><a href="/handleLogout"> Logout</a>
+            </li>
+        </ul>
+    </aside>
+    <section id="wrapper">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid mx-2">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#toggle-navbar" aria-controls="toggle-navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="uil-bars text-white"></i>
+                    </button>
+                    <a class="navbar-brand" href="/">Fin<span class="main-color">P</span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="toggle-navbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                         
+
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="uil-comments-alt"></i><span></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="uil-bell"></i><span></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i data-show="show-side-navigation1" class="uil-bars show-side-btn"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="p-4">
+            <div class="welcome">
+                <div class="content rounded-3 p-3">
+                    <h1 class="fs-3">Things to Know About Financial Planning</h1>
+                    <hr>
+                    <p> </p>
+                    <p class="knowledge">What is financial planning?
+                        <br>
+                        Financial planning is a step-by-step approach to meet one’s life goals. A financial plan acts as
+                        a guide as you go through life’s journey. Essentially, it helps you be in control of your
+                        income, expenses and investments such that you can manage your money and achieve your goals.
+                        <br>
+                        <br>
+                        <br>
+                        Benefits:
+
+                        <br>
+                        1. increased savings
+                        <br>
+                        2. Enjoy better standard of living
+                        <br>
+                        3. Prepared for any emergencies
+                        <br>
+                        <br>
+                        <br>
+                        How to have a succesfull financial planning?
+                        <br>
+                        1. understand your current situation
+                        <br>
+                        2. set your financial goals
+                        <br>
+                        3. invest wisely
+                        <br>
+                        4. monitor your financial plans regularly
+                        <br>
+                        <br>
+                        <br>
+                        What are investments?
+                        <br>
+                        An investment is an asset or item acquired with the goal of generating income or appreciation.
+                        An investment always concerns the outlay of some capital today—time, effort, money, or an
+                        asset—in hopes of a greater payoff in the future than what was originally put in. For example,
+                        an investor may purchase a monetary asset now with the idea that the asset will provide income
+                        in the future or will later be sold at a higher price for a profit.
+                        <br>
+                        <br>
+                        <br>
+                        Types of investments:
+                        <br>
+                        1. Growth Investments - These are more suitable for long term investors that are willing and
+                        able to withstand market ups and downs.
+                        <br>
+                        2. Shares - share indicates a unit of ownership of the particular company. If you are a
+                        shareholder of a company, it implies that you as an investor, hold a percentage of ownership of
+                        the issuing company. As a shareholder you stand to benefit in the event of the company’s
+                        profits, and also bear the disadvantages of the company’s losses.
+                        <br>
+                        3. Property - Buying a property is also considered as a growth investment because the price of
+                        houses and other properties can rise substantially over a medium to long term period.
+                        <br>
+                        4. Fixed interest - A type of investment that offers a set rate of interest for a specified
+                        amount of time, with the principal repaid at maturity. The best known type of fixed interest
+                        investments are bonds, which are essentially when governments or companies borrow money from
+                        investors and pay them a rate of interest in return.
+                        <br>
+                        <br>
+                        <br>
+                        What are taxes?
+                        <br>
+                        A tax is a mandatory fee or financial charge levied by any government on an individual or an
+                        organization to collect revenue for public works providing the best facilities and
+                        infrastructure. The collected fund is then used to fund different public expenditure programs.
+                        If one fails to pay the taxes or refuse to contribute towards it will invite serious
+                        implications under the pre-defined law. There are many types of taxes
+                        <br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="assets/js/bootstrap.bundle.min.jsDashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
